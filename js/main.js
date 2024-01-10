@@ -50,3 +50,29 @@ window.addEventListener("load" , ()=>{
   }, 3000);
 })
 
+// scroll animation
+
+// script.js
+function isElementNearViewport(el, offset = -100) {
+  const rect = el.getBoundingClientRect();
+  return (
+      rect.top - offset <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.bottom >= 0
+  );
+}
+
+function handleScroll() {
+  document.querySelectorAll('.animation-target:not(.animation-active)').forEach((el) => {
+      if (isElementNearViewport(el)) {
+          setTimeout(() => el.classList.add('animation-active'), el.getAttribute('data-delay'));
+      }
+  });
+
+  if (document.querySelectorAll('.animation-target:not(.animation-active)').length === 0) {
+      window.removeEventListener('scroll', handleScroll);
+  }
+}
+
+window.addEventListener('scroll', handleScroll);
+handleScroll();
+
