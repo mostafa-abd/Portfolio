@@ -247,19 +247,19 @@
             ></a>
           </div>
         </div>
-        <div class="form contact animation-target" data-delay="100">
+        <form onsubmit="Mail(); reset(); return false;" class="form  animation-target" data-delay="100">
           <label for="">Your Name</label>
           <label for="">Phone Number</label>
-          <input class="input" type="text" />
-          <input type="text" />
+          <input class="input" type="text" id="name"/>
+          <input type="text" id="number"/>
           <label for="">Email</label>
-          <input type="email" />
+          <input type="email" id="email"/>
           <label for="">subject</label>
-          <input type="text" />
+          <input type="text" id="sub"/>
           <label for="">Your Message</label>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-          <button>SEND MESSAGE</button>
-        </div>
+          <textarea name="" id="" cols="30" rows="10" id="text"></textarea>
+          <button type="submit">SEND MESSAGE</button>
+        </form>
       </div>
     </section>
 
@@ -273,12 +273,15 @@
       ></a>
     </div>
     <script src="js/all.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"
+   
+    </script>
+    <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"
       integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
     <script src="js/main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>

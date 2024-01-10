@@ -5,10 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    transition: transform 400ms linear;
-    -webkit-transition: -webkit-transform 400ms linear;
 }
-
 *::-webkit-scrollbar {
     width: 16px;
     height: 16px;
@@ -97,7 +94,6 @@ nav {
     width: 300px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
     z-index: 999;
-    
 }
 #menu-screen>.logo {
     margin: 0;

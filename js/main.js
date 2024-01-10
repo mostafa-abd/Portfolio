@@ -47,7 +47,7 @@ window.addEventListener("load" , ()=>{
   
   setTimeout(() => {
     loader.style.display ="none"
-  }, 3000);
+  }, 2000);
 })
 
 // scroll animation
@@ -76,3 +76,24 @@ function handleScroll() {
 window.addEventListener('scroll', handleScroll);
 handleScroll();
 
+// contact
+function Mail() {
+  let name = document.getElementById("name").value;
+  let number = document.getElementById("number").value;
+  let email = document.getElementById("email").value;
+  let sub = document.getElementById("sub").value;
+  let text = document.getElementById("text").value;
+
+
+  email.send({
+    Host : "smtp-relay.brevo.com",
+    Username : "tarmeez8@gmail.com",
+    Password : "WKEa4Uw9LkOgH7Rc",
+    To : 'mostafa-for-work@hotmail.com',
+    From : "tarmeez8@gmail.com",
+    Subject : "contact form",
+    Body : "name" + name +number +email +sub +text
+  }).then(
+  message => alert(message)
+  );
+}
