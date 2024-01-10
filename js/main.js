@@ -40,3 +40,13 @@ var typed = new Typed(".type", {
   loop: true,
 });
 
+
+// loading
+window.addEventListener("load" , ()=>{
+  const loader = document.querySelector(".loader");
+  
+  setTimeout(() => {
+    loader.style.display ="none"
+  }, 3000);
+})
+
