@@ -94,7 +94,7 @@ nav {
     height: 100vh;
     flex-direction: column;
     justify-content: space-between;
-    width: 40%;
+    width: 300px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
     z-index: 999;
     
@@ -465,7 +465,7 @@ span {
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 2% 1% 3%;
+    padding: 10% 1% 3%;
     justify-content: space-between;
 }
 
@@ -504,8 +504,11 @@ span {
 
 .info>.net {
     width: 80%;
+    margin-bottom: 5%;
 }
-
+.info>h1 ,.info>h5 ,.info>p ,.info>div{
+    margin-left: 5%;
+}
 .form {
     border-radius: 10px;
     background: #212428;
@@ -567,7 +570,7 @@ textarea {
     background: linear-gradient(97deg, #1E2024 0%, #23272B 100%);
     box-shadow: -10px -10px 19px 0px #262A2E, 10px 10px 19px 0px #1C1E22;
     display: flex;
-    width: 692px;
+    width: 210%;
     padding: 15px 0px;
     justify-content: center;
     align-items: center;
@@ -634,6 +637,16 @@ footer>div:first-child,
         margin: 0 auto;
         width: 80%;
     }
+    .containar{
+        flex-direction: column;
+        height: 1600px;
+        margin-top: 50px;
+    }
+    .info , .form{
+        width: 97%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+    }
 }
 @media (max-width:800px) {
     .menu {
@@ -642,12 +655,15 @@ footer>div:first-child,
     #bar {
         visibility: visible;
     }
+     .contact>h2{
+        font-size: 50px;
+     }
 }
 @media (max-width:510px) {
     .topics>div{
         font-size: 50px;
     }
-    .topics>div>span{
+    .topics>div>span , .contact>h2{
         font-size: 40px;
     }
     .social{
@@ -665,12 +681,18 @@ footer>div:first-child,
     .cont>.me{
         width: 100%;
     }
+    .portfolio, .contact {
+        padding-top: 100px;
+    }
+    .about{
+        margin-top: 100px;
+    }
 }
 @media (max-width:425px) {
     .topics>div ,.Features>h2 {
         font-size: 40px;
     }
-    .topics>div>span , .me>div{
+    .topics>div>span , .me>div , .contact>h2{
         font-size: 30px;
     }
     .topics>p {
@@ -684,7 +706,7 @@ footer>div:first-child,
     .topics>div{
         font-size: 30px;
     }
-    .topics>div>span{
+    .topics>div>span , .contact>h2{
         font-size: 25px;
     }
     .social{
@@ -699,13 +721,13 @@ footer>div:first-child,
     .topics>div , .me>div{
         font-size: 22px;
     }
-    .topics>div>span{
+    .topics>div>span , .contact>h2{
         font-size: 20px;
     }
     h1{
         font-size: 10px;
     }
-    .portfolio>h2, .contact>h2, .about>h2{
+    .portfolio>h2, .about>h2{
         font-size: 30px;
     }
 
