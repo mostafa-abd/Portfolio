@@ -77,23 +77,23 @@ window.addEventListener('scroll', handleScroll);
 handleScroll();
 
 // contact
-function Mail() {
+function sendEmail() {
   let name = document.getElementById("name").value;
   let number = document.getElementById("number").value;
   let email = document.getElementById("email").value;
   let sub = document.getElementById("sub").value;
-  let text = document.getElementById("text").value;
+  let message = document.getElementById("text").value;
 
 
-  email.send({
-    Host : "smtp-relay.brevo.com",
-    Username : "tarmeez8@gmail.com",
-    Password : "WKEa4Uw9LkOgH7Rc",
-    To : 'mostafa-for-work@hotmail.com',
-    From : "tarmeez8@gmail.com",
-    Subject : "contact form",
-    Body : "name" + name +number +email +sub +text
-  }).then(
-  message => alert(message)
-  );
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "mostafapepo000@hotmail.com",
+    Password : "6232C3EB94830C02467F177EF2FDAC654953",
+    To : 'mostafapepo111@hotmail.com',
+    From : "mostafapepo000@gmail.com",
+    Subject : "contact form ",
+    Body : `Name : ${name} <br>  Email : ${email} <br>  Number : ${number} <br>  sub : ${sub} <br> Message : ${message} <br>`
+}).then(
+  message => console.log(message)
+);
 }
