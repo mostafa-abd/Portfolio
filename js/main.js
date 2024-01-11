@@ -89,7 +89,7 @@ function sendEmail() {
     Host : "smtp.elasticemail.com",
     Username : "mostafapepo000@hotmail.com",
     Password : "6232C3EB94830C02467F177EF2FDAC654953",
-    To : 'mostafapepo111@hotmail.com',
+    To : 'mostafa-for-work@hotmail.com',
     From : "mostafapepo000@gmail.com",
     Subject : "contact form ",
     Body : `Name : ${name} <br>  Email : ${email} <br>  Number : ${number} <br>  sub : ${sub} <br> Message : ${message} <br>`
