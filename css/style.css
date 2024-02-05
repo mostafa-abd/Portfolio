@@ -186,7 +186,7 @@ header>.right,
 }
 
 header>.right>img,
-.about>.left>img {
+.about>.cont>.left>img {
     bottom: 0;
     position: absolute;
     left: 10%;
