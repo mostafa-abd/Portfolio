@@ -168,7 +168,7 @@ transition: all 500ms;
     scroll-snap-type: y mandatory;
 
 }
-.sec{
+.content>section{
     width : 100%;
     height: 68dvh;
     scroll-snap-align: start;
