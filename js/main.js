@@ -16,6 +16,7 @@ let main = document.getElementById("main"),
   social = document.querySelector(".social"),
   hire = document.querySelector(".hire"),
   title = document.getElementsByClassName("title")[0],
+  borderImage =document.getElementsByClassName("border")[0],
   navIcon = document.querySelectorAll(".nav-icon>a>i");
 
 //about animation && active nav
@@ -34,6 +35,7 @@ for (let i = 0; i < navIcon.length; i++) {
         contentLeftSpe.classList.add("d-n");
         social.classList.add("social-left");
         hire.classList.add("d-n");
+        borderImage.classList.remove("d-n");
         title.textContent = "About Me"
     }else{
       main.classList.remove("main-left-slide");
@@ -43,6 +45,8 @@ for (let i = 0; i < navIcon.length; i++) {
       contentLeftSpe.classList.remove("d-n");
       social.classList.remove("social-left");
       hire.classList.remove("d-n");
+      borderImage.classList.add("d-n");
+
     }
   });
 }

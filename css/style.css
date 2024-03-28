@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     transition: all  0.5s ease-in-out .1s;
+    color: #fff;
 
 }
 
@@ -77,15 +78,14 @@ aside {
 }
 
 .info-top>img {
+    background-color: #e0e0e0;
     object-fit: cover;
     object-position: top;
     width: 100%;
     height: 250px;
-    background: #fff;
     border-radius: 17px;
 }
 .info-top>div{
-    color: #ffffff;
     font-size: 26px;
     font-weight: 500;
 }
@@ -121,8 +121,8 @@ aside {
     transition: all 200ms;
 }
 
-.hire>button{
-    background-color: #28e98c;
+button{
+    background-color: #28e98cd6;
     border: none;
     border-radius: 25px;
     padding: 10px 100px;
@@ -131,7 +131,7 @@ aside {
     cursor: pointer;
     border: 2px solid #28e98c;
 }
-.hire>button:hover{
+button:hover{
 background-color: transparent;
 color: #28e98c;
 transition: all 500ms;
@@ -178,7 +178,6 @@ transition: all 500ms;
 #who>h1{
     width: 90%;
     height: 45dvh;
-    color: #fff;
     font-size: 60px;
     margin-top: 40px;
 }
@@ -186,7 +185,6 @@ transition: all 500ms;
     color: #28e98c;
 }
 #who>p{
-    color: #fff;
     font-size: 18px;
     width: 70%;
 }
@@ -221,32 +219,46 @@ transition: all 500ms;
 }
 .info-top>.f-s{
     font-size: 11px;
+    transition: all 0.3s ease-out;
+
 }
 
 #about{
     display: flex;
-
+    justify-content: space-around;
 }
-#about>div{
+#about>div:first-child{
     background: #fff;
     height: 400px;
     border-radius: 32px 32px 0px ;
     overflow: hidden;
     margin-top: 20px;
+    width: 30.8%;
 }
 #about>div>img{
     height: 475px;
     z-index: 2;
     position: relative;
-    background: #fff;
+    background: #e0e0e0;
 }
 .border{
     width: 20%;
     height: 66%;
     position: absolute;
     top: 20%;
-    left: 19%;
+    left: 23%;
     background: transparent;
     border: 2px solid #28e98c;
     border-radius: 32px 32px 0;
+}
+.about{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about>p{
+    font-size: 22px;
+    color: #eeecec;
 }
