@@ -17,7 +17,7 @@ main {
     width: 95%;
     height: 94dvh;
     display: grid;
-    grid-template-columns: 25% 69% 4%;
+    grid-template-columns: auto 1fr 4%;
     column-gap: 2%;
     margin: 3dvh 2%;
 }
@@ -79,7 +79,7 @@ aside {
     object-position: top;
     width: 100%;
     height: 250px;
-    background: linear-gradient(to bottom right, #3f3f40 3%, hsl(0, 0%, 19%) 97%);
+    background: #fff;
     border-radius: 17px;
 }
 .info-top>div{
@@ -96,17 +96,22 @@ aside {
 }
 .social{
     display: flex;
-    width: 90%;
+    width: 100%;
     justify-content: space-around;
 }
 
 .social>i{
-    font-size: 25px;
+    font-size: 20px;
     color: #999999;
     border: 2px solid #565656;
     border-radius: 50px;
-    padding: 15px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    text-align: center;
 }
 .social>i:hover{
     color: #28e98c;
@@ -158,10 +163,15 @@ transition: all 500ms;
     width: 94%;
     margin: 0 3%;
     scrollbar-width: none;
+    scroll-snap-type: y mandatory;
+
 }
-#who{
+.sec{
     width : 100%;
     height: 68dvh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    block-size: 100%;
 }
 #who>h1{
     width: 90%;
@@ -178,8 +188,26 @@ transition: all 500ms;
     font-size: 18px;
     width: 70%;
 }
-#about{
-    height: 45dvh;
-    width: 90%;
-
+.main-left-slide{
+    grid-template-columns: 7% 1fr 4%;
+}
+.left-slide{
+    height:100px;
+    margin-top: 30px;
+}
+.info-top>.img-left-slide{
+    height: 75%;
+    border-radius: 50%;
+}
+.d-n{
+    display: none;
+}
+.social-left{
+    width: 70%;
+    flex-direction: column;
+    height: 70dvh;
+    align-items: center;
+}
+.info-top>.f-s{
+    font-size: 11px;
 }
