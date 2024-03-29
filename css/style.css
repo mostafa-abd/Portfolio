@@ -22,6 +22,7 @@ main {
     grid-template-columns: auto 67.5% 4%;
     column-gap: 2%;
     margin: 3dvh 2%;
+    perspective: 300px;
 }
 
 .main-section,
@@ -140,6 +141,8 @@ transition: all 500ms;
     display: grid;
     grid-template-rows: 100px 1fr;
 
+animation-duration: 1s;
+animation-fill-mode: forwards;
 }
 .title{
     color: #fafafa;
@@ -299,3 +302,29 @@ transition: all 500ms;
     color: #28e98c;
     font-size: 50px;
 }
+@keyframes projects {
+    0%{
+        transform: translate3d(0px , 0px , 0px)
+    }
+    50%{
+        transform: translate3d(0px , 0px , -80px)
+
+    }
+    100%{
+        transform: translate3d(0px , -700px , -80px)
+    }
+}
+
+@keyframes anim{
+    0% {
+      -webkit-transform: translateY(1000px);
+              transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

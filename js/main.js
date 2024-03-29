@@ -59,7 +59,11 @@ content.addEventListener("scroll", () => {
             case "skills":
             navIcon[3].classList.add("active");
             title.textContent = "My Skills"   
-            break;         
+            break;      
+            case "projects":
+              navIcon[4].classList.add("active");
+              title.textContent = "projects"   
+              break;        
       }
     }
   });
@@ -89,7 +93,14 @@ function about() {
   }
 }
 content.addEventListener("scroll", about);
+// project animation
 
-
+if (conditin){
+  let mainSection = document.getElementsByClassName("main-section")[0];
+  mainSection.style.cssText ="animation-name: projects;"
+  setTimeout(() => {
+    mainSection.style.cssText ="animation-name: anim;"
+  }, 1000);
+}
 
 
