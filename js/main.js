@@ -95,12 +95,13 @@ function about() {
 content.addEventListener("scroll", about);
 // project animation
 
-if (conditin){
-  let mainSection = document.getElementsByClassName("main-section")[0];
-  mainSection.style.cssText ="animation-name: projects;"
-  setTimeout(() => {
-    mainSection.style.cssText ="animation-name: anim;"
-  }, 1000);
-}
+// if (title.textContent === "who am i"){
+// console.log("asf");
+// }
 
 
+// let mainSection = document.getElementsByClassName("main-section")[0];
+// mainSection.style.cssText ="animation-name: projects;"
+// setTimeout(() => {
+//   mainSection.style.cssText ="animation-name: anim;"
+// }, 1000);
