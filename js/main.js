@@ -93,6 +93,31 @@ function about() {
   }
 }
 content.addEventListener("scroll", about);
+
+// skills animation
+let skillIcons = document.querySelectorAll(".icon")
+
+for (let i = 0; i < skillIcons.length; i++) {
+  setTimeout(() => {
+    skillIcons[i].style.opacity = "1"
+  },i * 100);
+}
+
+// project hover
+let demo =  document.getElementsByClassName("demo"),
+imgProject =document.getElementsByClassName("pr-img");
+
+for (let i = 0; i < demo.length; i++) {
+  demo[i].addEventListener("mouseover" , ()=>{
+    imgProject[i].classList.add("scale")
+  })
+  demo[i].addEventListener("mouseout", function() {
+    imgProject[i].classList.remove("scale");
+  });
+}
+
+
+
 // project animation
 
 // if (title.textContent === "who am i"){
