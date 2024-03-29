@@ -52,6 +52,14 @@ content.addEventListener("scroll", () => {
           navIcon[1].classList.add("active");
           title.textContent = "about me"
           break;
+          case "services":
+            navIcon[2].classList.add("active");
+            title.textContent = "My Specializations"
+            break;
+            case "skills":
+            navIcon[3].classList.add("active");
+            title.textContent = "My Skills"   
+            break;         
       }
     }
   });
