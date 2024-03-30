@@ -116,17 +116,29 @@ for (let i = 0; i < demo.length; i++) {
   });
 }
 
+// active cat
+let cat = document.querySelectorAll(".cat>div"),
+    topPr = document.getElementsByClassName("top")[0],
+    normal = document.getElementsByClassName("nor")[0],
+    Wordpress = document.getElementsByClassName("wordpress")[0],
+    courses = document.getElementsByClassName("courses")[0];
 
-
-// project animation
-
-// if (title.textContent === "who am i"){
-// console.log("asf");
-// }
-
-
-// let mainSection = document.getElementsByClassName("main-section")[0];
-// mainSection.style.cssText ="animation-name: projects;"
-// setTimeout(() => {
-//   mainSection.style.cssText ="animation-name: anim;"
-// }, 1000);
+for (let i = 0; i < cat.length; i++) {
+  cat[i].addEventListener("click", ()=>{
+    for (let t = 0; t < cat.length; t++) {
+      cat[t].classList.remove("pr-active")
+    }
+    cat[i].classList.add("pr-active")
+  })
+}
+function show(prcat, dn, condition) {
+  if (condition) {
+    prcat.classList.remove(dn);
+  } else {
+    prcat.classList.add(dn);
+  }
+};
+show(topPr, "d-n", cat[0].classList.contains("pr-active"))
+show(normal, "d-n", cat[1].classList.contains("pr-active"))
+show(Wordpress, "d-n", cat[2].classList.contains("pr-active"))
+show(courses, "d-n", cat[3].classList.contains("pr-active"))
