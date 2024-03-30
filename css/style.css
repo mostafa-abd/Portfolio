@@ -121,6 +121,10 @@ aside {
     border: 2px solid #28e98c;
     transition: all 200ms;
 }
+svg:hover path{
+    fill: #28e98c;
+    transition: all 0s;
+  }
 
 button{
     background-color: #28e98cd6;
@@ -421,3 +425,4 @@ color: #fff;
     background-color: transparent;
     color: #27e285;
 }
+
