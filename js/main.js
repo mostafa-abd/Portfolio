@@ -82,7 +82,7 @@ function about() {
     contentLeftName.classList.add("f-s");
     contentLeftSpe.classList.add("d-n");
     social.classList.add("social-left");
-    hire.classList.add("d-n");
+    hire.style.display = "none";
     borderImage.classList.remove("d-n");
     title.textContent = "About Me";
   } else {
@@ -92,7 +92,7 @@ function about() {
     contentLeftName.classList.remove("f-s");
     contentLeftSpe.classList.remove("d-n");
     social.classList.remove("social-left");
-    hire.classList.remove("d-n");
+    hire.style.display = "inline";
     borderImage.classList.add("d-n");
   }
 }
