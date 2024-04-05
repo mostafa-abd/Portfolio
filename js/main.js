@@ -64,6 +64,10 @@ content.addEventListener("scroll", () => {
               navIcon[4].classList.add("active");
               title.textContent = "projects"   
               break;        
+              case "contact":
+                navIcon[5].classList.add("active");
+                title.textContent = "contact me"   
+                break;   
       }
     }
   });

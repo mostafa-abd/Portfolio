@@ -425,4 +425,26 @@ color: #fff;
     background-color: transparent;
     color: #27e285;
 }
+form{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: repeat(9, 9%);
+gap: 2% 10%;
+}
+input{
+    height: 35px;
+    border: none;
+    color: #121212;
+    border-radius: 10px;
+}
 
+input:not(input:first-of-type , input:nth-of-type(2)), textarea{
+    grid-column: 1 / 3;
+}
+textarea{
+    grid-row: 6 /9;
+    border-radius: 10px;
+
+}
