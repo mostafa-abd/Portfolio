@@ -4,3 +4,13 @@ body {
   background-color: #121212;
 
 }
+
+.MuiSvgIcon-root {
+  font-size: 25px !important; 
+  color: #a59f9f;
+  cursor: pointer;
+}
+.MuiSvgIcon-root:hover{
+  color: #28e98c;
+transition:  200ms linear;
+}
