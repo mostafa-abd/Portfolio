@@ -1,8 +1,8 @@
 .App {
   width: 96%;
-  height: 96vh;
+  height: 94vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 2vh 2%;
+  margin: 3vh 2%;
 }
