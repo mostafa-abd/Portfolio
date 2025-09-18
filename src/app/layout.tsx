@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import './styles/variables.css';
 import Header from "./components/header";
 import Aside from "./components/aside";
 import {Poppins} from 'next/font/google';

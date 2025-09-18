@@ -1,7 +1,7 @@
 const Aside =()=>{
 return (
     <aside>
-        hi
+        
     </aside>
 )
 }
