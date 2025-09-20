@@ -3,17 +3,15 @@ import "./globals.css";
 import './styles/variables.css';
 import Header from "./components/header";
 import Aside from "./components/aside";
-import {Poppins} from 'next/font/google';
+import { poppins } from './fonts';
 
 export const metadata: Metadata = {
   title: "Mostafa : Portfolio",
   description: "My Portfolio",
+  viewport: "width=device-width, initial-scale=1.0"
+
 };
-const poppins = Poppins({
-  subsets : ["latin"],
-  weight :["400","500","700"],
-  variable:"--poppins",
-});
+
 export default function RootLayout({children}: Readonly<{children:React.ReactNode;}>) {
   return (
     <html lang="en">
