@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+// import "./globals.css";
 import './styles/variables.css';
 import Header from "./components/header";
 import Aside from "./components/aside";
@@ -190,6 +190,35 @@ aside {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+@media (max-width: 850px) {
+  body {
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+  main{
+    width: 100%;
+    height: 100vh;
+    min-width: 100%;
+    margin: 0;
+  }
+  aside{
+    order:-1;
+          width: 100%;
+        height: 88vh;
+        min-width: 100%;
+        margin: 0 0 47px 0;
+  }
+  header {
+    position: fixed;
+    z-index: 99999;
+    bottom: 0;
+    border-radius: 50px 50px 0 0;
+    width: 100%;
+    height: 60px;
+    flex-direction: row;
+   
   }
 }
 
