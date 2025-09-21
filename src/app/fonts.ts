@@ -9,5 +9,5 @@ export const poppins = Poppins({
 export const syne = Syne({
   subsets: ['latin'],
   weight: ['400', '500', '700'],
-  variable: '--oswald',
+  variable: '--syne',
 });

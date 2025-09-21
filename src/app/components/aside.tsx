@@ -41,6 +41,7 @@ const Aside = () => {
         alt="Mostafa"
         width={400}    
         height={300}   
+        priority
       />
       </div>
       <div className={`profile-name ${syne.variable}`}>
@@ -54,19 +55,20 @@ const Aside = () => {
         Get in touch
       </a>
       <div className="social">
-        <a href="">
+        <a href="" title="Github">
           <Github size={18} />
         </a>
-        <a href="">
+        <a href="" title="Linkedin">
           <Linkedin size={18} />
+
         </a>
-        <a href="">
+        <a href="" title="Mail">
           <Mail size={18} />
         </a>
-        <a href="">
+        <a href="" title="WhatsApp">
           <MessageSquareText size={18} />
         </a>
-        <a href="">
+        <a href="" title="Website">
           <Globe size={18} />
         </a>
       </div>
