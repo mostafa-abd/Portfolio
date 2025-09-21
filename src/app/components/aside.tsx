@@ -36,13 +36,14 @@ const Aside = () => {
   return (
     <aside ref={aside}>
       <div className="profile-image">
-        <Image
-          src={myImage}
-          alt="Mostafa"
-          fill
-          style={{ objectFit: "cover" }}
-          priority
-        />
+<Image
+  src={myImage}
+  alt="Mostafa"
+  fill
+  style={{ objectFit: "cover" }}
+  priority
+  fetchPriority="high"
+/>
       </div>
       <div className={`profile-name ${syne.variable}`}>
         Mostafa Abdel-Mawgoud

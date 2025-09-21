@@ -97,7 +97,7 @@ aside {
 .profile-name {
   width: 100%;
   font-family: var(--syne);
-  font-size: 20px;
+  font-size: 18px;
   color: #e9e9f1;
     text-align:center;
 
