@@ -1,4 +1,8 @@
+"use client";
+
 import { syne } from "../fonts";
+import { useRef, useEffect } from "react";
+
 import {
   MessageSquareText,
   Github,
@@ -8,10 +12,29 @@ import {
   Globe,
 } from "lucide-react";
 import Image from 'next/image';
-import myImage from './../assets/mostafa.webp'
+import myImage from './../assets/mostafa.webp';
+
 const Aside = () => {
+    const aside = useRef(null);
+    useEffect(() => {
+      function handleScroll() {
+        if (!aside.current) return;
+  
+        if (window.scrollY > 0) {
+          (aside.current as HTMLElement).classList.add("aside-effect");
+        } else {
+          (aside.current as HTMLElement).classList.remove("aside-effect");
+        }
+      }
+  
+      window.addEventListener("scroll", handleScroll);
+  
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, []);
   return (
-    <aside>
+    <aside ref={aside}>
       <div className="profile-image">
               <Image
         src={myImage}   
